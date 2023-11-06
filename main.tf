@@ -6,5 +6,4 @@ provider "tfe" {
 resource "tfe_team" "dorinas_team" {
   name         = "Dorina's Test Team"
   organization = "Infragoose"
-  description  = "A test team created with Terraform"
 }
