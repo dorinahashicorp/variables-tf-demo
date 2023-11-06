@@ -10,4 +10,8 @@ resource "tfe_team" "test" {
   name         = "dorinas-cool-team"
 }
 
-provider "tfe" {}
+provider "tfe" {
+  hostname = "app.terraform.io"
+  organization = "Infragoose"
+
+}
