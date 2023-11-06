@@ -11,7 +11,8 @@ provider "tfe" {
   organization = "Infragoose"
 }
 
-resource "tfe_team" "dorinas_team" {
-  name         = "Dorina's Test Team"
-  organization = "Infragoose"
+resource "tfe_variable_set" "test" {
+  name          = "Test Varset"
+  description   = "Some description."
+  organization  = "Infragoose"
 }
