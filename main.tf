@@ -14,5 +14,4 @@ provider "tfe" {
 resource "tfe_workspace" "test" {
   name         = "test-workspace"
   organization = "Infragoose"
-  project = "Default"
 }
