@@ -1,18 +1,11 @@
-terraform {
-  required_providers {
-    tfe = {
-      version = "~> 0.49.2"
-    }
-  }
-}
-
-resource "tfe_team" "test" {
-  name         = "dorinas-cool-team"
-  organization = "Infragoose"
-}
-
 provider "tfe" {
   hostname = "app.terraform.io"
   organization = "Infragoose"
+  token = "TFE_TOKEN"
+}
 
+resource "tfe_team" "dorinas_team" {
+  name         = "Dorina's Test Team"
+  organization = "Infragoose"
+  description  = "A test team created with Terraform"
 }
