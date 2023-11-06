@@ -4,7 +4,7 @@ terraform {
       version = "~> 0.49.2"
     }
   }
-}
+
 
 resource "tfe_workspace" "test" {
   name         = "test-workspace"
@@ -13,4 +13,5 @@ resource "tfe_workspace" "test" {
 provider "tfe" {
   hostname = "app.terraform.io"
   organization = "Infragoose"
+}
 }
