@@ -11,6 +11,7 @@ resource "tfe_workspace" "test" {
 }
 
 provider "tfe" {
+  token = var.TFE_Token
   hostname = "app.terraform.io"
   organization = "Infragoose"
 }
