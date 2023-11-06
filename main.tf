@@ -6,9 +6,8 @@ terraform {
   }
 }
 
-resource "tfe_team" "test" {
-  name         = "dorinas-cool-team"
+resource "tfe_workspace" "test" {
+  name         = "my-workspace-name"
   organization = "Infragoose"
-}
 
 provider "tfe" {}
