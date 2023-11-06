@@ -8,11 +8,9 @@ terraform {
 
 resource "tfe_workspace" "test" {
   name         = "test-workspace"
-  organization = "Infragoose"
 }
 
 provider "tfe" {
   hostname = "app.terraform.io"
   organization = "Infragoose"
-  project = "Default"
 }
