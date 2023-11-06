@@ -6,12 +6,8 @@ terraform {
   }
 }
 
-resource "tfe_workspace" "test" {
-  name         = "test-workspace"
+resource "tfe_team" "test" {
+  name         = "dorinas-cool-team"
 }
 
-provider "tfe" {
-  hostname = "app.terraform.io"
-  organization = "Infragoose"
-}
-
+provider "tfe" {}
