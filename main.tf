@@ -8,6 +8,7 @@ terraform {
 
 resource "tfe_team" "test" {
   name         = "dorinas-cool-team"
+  organization = "Infragoose"
 }
 
 provider "tfe" {
